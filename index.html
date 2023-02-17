@@ -6,9 +6,16 @@
       type="text/javascript"
       src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"
     ></script>
+    <style>
+      div {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <video id="preview"></video>
+    <div>
+      <video id="preview"></video>
+    </div>
     <script type="text/javascript">
       let scanner = new Instascan.Scanner({
         video: document.getElementById('preview'),
