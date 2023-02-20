@@ -27,8 +27,7 @@
       scanner.addListener('scan', function (content) {
         console.log(content);
         //window.location.href = content;
-        let a;
-        a = document.getElemntById('data');
+        const a = document.getElemntById('data');
         a.text = content;
       });
       Instascan.Camera.getCameras()
