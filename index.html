@@ -16,13 +16,20 @@
     <div>
       <video id="preview"></video>
     </div>
+    <hr />
+    <div>
+      <p id="data">xd</p>
+    </div>
     <script type="text/javascript">
       let scanner = new Instascan.Scanner({
         video: document.getElementById('preview'),
       });
       scanner.addListener('scan', function (content) {
         console.log(content);
-        window.location.href = content;
+        //window.location.href = content;
+        let a;
+        a = document.getElemntById('data');
+        a = content;
       });
       Instascan.Camera.getCameras()
         .then(function (cameras) {
