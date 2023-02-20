@@ -26,10 +26,8 @@
       });
       scanner.addListener('scan', function (content) {
         console.log(content);
-        let data[] = [];
-        data = content;
-        console.log(data[0])
         //window.location.href = content;
+        console.log('=============================');
         const a = document.getElementById('data');
         a.text = content;
       });
