@@ -18,7 +18,7 @@
     </div>
     <hr />
     <div>
-      <p id="data">xd</p>
+      <a id="data">xd</a>
     </div>
     <script type="text/javascript">
       let scanner = new Instascan.Scanner({
@@ -29,7 +29,7 @@
         //window.location.href = content;
         let a;
         a = document.getElemntById('data');
-        a = content;
+        a.text = content;
       });
       Instascan.Camera.getCameras()
         .then(function (cameras) {
